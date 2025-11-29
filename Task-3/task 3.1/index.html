@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Basic HTML Forms Elements</h1> 
+   <form >
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label>Name (Text):</label>
+        <input type="text" name="username"><br><br>
+    </fieldset>
+    <hr>
+    
+    <fieldset>
+        <legend>Contact & Security</legend>
+        <label>Email:</label>
+        <input type="email" name="email"><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password"><br><br>
+    </fieldset>
+    <hr>
+
+
+    <fieldset>
+        <legend>Preferences</legend>
+        <label>Favorite Color:</label>
+        <input type="color" name="favcolor"><br><br>
+    </fieldset>
+    <hr>
+
+    
+    <fieldset>
+        <legend>Range & Options</legend>
+        <label>Volume (Range 0-100):</label>
+        <input type="range" min="0" max="100" value="50"><br><br>
+
+        <p>Select your favorite pet:</p>
+        <input type="radio" name="pet" value="dog"> Dog<br>
+        <input type="radio" name="pet" value="cat"> Cat<br>
+        <input type="radio" name="pet" value="bird"> Bird<br><br>
+
+        <p>Interests (Check all that apply):</p>
+        <input type="checkbox" value="coding"> Coding<br>
+        <input type="checkbox" value="music"> Music<br>
+        <input type="checkbox" value="travel" checked> Travel<br>
+    </fieldset><hr>
+
+    
+    <fieldset>
+        <legend>Selection</legend>
+        <label>Choose a Country:</label>
+        <select>
+            <option>United Kingdom</option>
+            <option>USA</option>
+            <option>Egypt</option>
+            <option>Germany</option>
+        </select>
+</fieldset><hr>
+    <fieldset>
+        <legend>Comments</legend>
+        <label>Your Comments (Textarea):</label><br>
+        <textarea rows="4" cols="40"></textarea>
+</fieldset><hr>
+
+    <fieldset>
+        <legend>File Upload</legend>
+        <label>Upload a File:</label>
+        <input type="file">
+</fieldset><hr>
+    
+    <fieldset>
+        <legend>Specialized Text Inputs</legend>
+        <label>Search this site:</label>
+        <input type="search"><br><br>
+
+        <label>Your Website URL:</label>
+        <input type="url" placeholder="https://example.com">
+</fieldset><hr>
+
+    <fieldset>
+        <legend>Date & Time</legend>
+        <label>Date:</label>
+        <input type="date"><br><br>
+
+        <label>Month:</label>
+        <input type="month"><br><br>
+
+        <label>Time:</label>
+        <input type="time">
+</fieldset><hr>
+    
+    <fieldset>
+        <legend>Datalist (Suggestions)</legend>
+        <label>Choose a Browser (with suggestions):</label>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Opera">
+            <option value="Edge">
+        </datalist>
+</fieldset><hr>
+    <br>
+    <button type="submit">Submit Form</button>
+    <button type="reset">Clear Form</button>
+
+</form>
+
+</body>
+</html>
